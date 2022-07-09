@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo:wght@700&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arima&family=Arvo:wght@700&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(211, 210, 210);
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+.navbar{
+ 
+    color: white;
+    background-color : black;
+    height: 15%;
+    padding-left: 50%;
+    
+
+   
+   
+  }
+
+
+    
+
+
+
+.navbar nav li {
+    
+    display: inline;
+    float: left;
+    list-style: none;
+    padding: 20px;
+    padding-top: 30px;
+    
+}
+
+.navbar nav li:hover {
+    cursor: pointer;
+    background-color: rgb(110, 106, 106);
+
+}
+.navbar nav li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.navbar nav .button{
+    padding: 20px;
+}
+.navbar nav .button button{
+    
+    
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.button button:hover{
+    cursor: pointer;
+    background-color: rgb(110, 106, 106);
+
+}
+
+.infocontainer{
+
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(240, 239, 235);
+    margin:80px;
+    height:320px;
+    width:1100px;
+    
+}
+.content{
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.hello{
+    font-size: 35px;
+    font-family: 'Acme', sans-serif;
+
+}
+.name{
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+}
+.about{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.image1{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.contactform{
+
+    margin: 30px;
+    padding:30px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.contactform h1 {
+
+
+    padding-left: 350px;
+    font-family: 'Acme', sans-serif;
+}
+.contactform form{
+    padding-top: 40px;
+
+    padding-left:200px;  
+}
+.element {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    margin:20px  100px auto; 
+    border-radius: 10px;
+    padding: 15px;
+}
+.form-label{
+    font-family: 'Arima', cursive;
+    padding: 20px;
+    margin:10px;
+}
+.form-control{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+
+    cursor: pointer;
+    background-color: rgb(118, 111, 191);
+}
+.project h1 {
+    
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    padding: 30px;
+}
+.heading{
+    padding: 20px;
+    background-color:rgb(79, 210, 214);
+    border-radius: 8px;
+}
+
+.bookmarkRibbon {
+    width: 400px;
+    height: 0;
+    border-bottom: 50px solid #045089;
+    border-top: 50px solid #045089;
+    border-left: 30px solid transparent;
+    float: right;
+   margin-top: -87px;
+
+    font-size: 40px;
+    font-weight:600;
+    text-align: center;
+    color:white;
+    
+    text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+
+}
+.list{
+
+    margin-top: 150px;
+    margin-left: 300px;
+    padding: 40px;
+
+}
+
+.list li {
+    margin-bottom: 30px;
+     padding: 10px;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Acme', sans-serif;
+}
+.list li .border{
+
+    background-color: aliceblue;
+    margin-left: 120px;
+    padding: 20px 100px 20px 100px;
+    border-radius: 10px 20px;
+    
+
+}
+
+.list li .head{
+
+    background-color: bisque;
+   padding: 20px 150px 20px 150px;
+    
+    
+    border-radius: 10px 20px;
+
+}
+.dropdown-content{
+    display:none;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content{
+    
+    display: block;
+}
+
+.skills{
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.container1 {
+   
+    position: relative;
+    width:50%;
+    
+    margin-left: 410px;
+    
+    padding-top: 20px;
+    padding-bottom: 60px;
+    
+    animation: zoom-in-zoom-out 1.5s ease ;
+
+
+  }
+ 
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .image {
+  
+    opacity: 1;
+    display: block;
+    width: 500px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    border: 10px solid black;
+    
+  }
+ 
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+   
+    text-align: center;
+
+    
+   
+  }
+
+  .container1:hover .image {
+    opacity: 0.5;
+  }
+  
+  .container1:hover .middle {
+    animation: 1s ease-out 0s 1 slideInTop;
+    opacity: 1;
+  }
+  @keyframes slideInTop{
+    0% {
+      top: 50px;
+    }
+    100% {
+      top: 180px;
+    }
+  }
+
+
+  
+  .text {
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+    background-color: rgb(255, 203, 157);
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    padding: 20px 32px;
+
+  }
+  .name-project{
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 30px;
+    padding: 20px ;
+    
+  }
+ 
